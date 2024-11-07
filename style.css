@@ -1,0 +1,237 @@
+/* Importo las fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Ajustes generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fffbf2;
+    color: #3a2d28;
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+/* Navegacion */
+header {
+    background-image: url("images/cafe.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed; /*Para que quede fijo el background hasta que se desplaza a la siguiente sección*/
+    box-shadow: 5% #222;
+    width: 100%;
+    height: 1000px; /*Ver cómo hacer para que la altura sea adaptable según la pantalla pero que ocupe toda la altura*/
+}
+
+.section_nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 1%;
+}
+
+.section_nav .nav_title a {
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.section_nav .nav_bar {
+    width: 25%;
+} 
+
+.section_nav .nav_bar a {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: medium;
+    margin: 0;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.texto_nav .primera_linea {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #DA9F5B;
+    font-size: 300%;
+    font-weight:bold;
+    transform: translate(0, +100%); /* Para acercarlo al texto siguiente */
+}
+
+.texto_nav .segunda_linea {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 900%;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+
+.texto_nav .tercera_linea {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 200%;
+    font-weight: bold;
+    transform: translate(0, -100%); /* Para acercarlo al texto anterior */
+}
+
+/* Menú */
+#Menu {
+    font-size: 500%;
+}
+
+
+/* Form */
+#Reservas {
+    background-color: #fffbf2;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+}
+
+.texto_reservas {
+    width: 60%;
+    padding-right: 5%;
+}
+
+.texto_reservas .titulo_reservas {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #DA9F5B;
+    text-decoration: none;
+    font-size: 250%;
+    font-weight: bold;
+}
+
+.texto_reservas .subtitulo_reservas {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #33211d;
+    text-decoration: none;
+    font-size: 500%;
+    font-weight: bold;
+    transform: translate(0, -80%); /* Para acercarlo al texto anterior. CÓMO HAGO PARA NO TENER QUE USAR ESTO Y ORGANIZAR LOS PARRAFOS PARA QUE QUEDEN IGUAL?*/
+}
+
+.texto_reservas .detalle_reservas {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #33211d;
+    text-decoration: none;
+    font-size: 200%;
+    font-weight: bold;
+    transform: translate(0, -400%); /* Para acercarlo al texto anterior. CÓMO HAGO PARA NO TENER QUE USAR ESTO Y ORGANIZAR LOS PARRAFOS PARA QUE QUEDEN IGUAL? */
+}
+
+.texto_reservas .comentario_reservas {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #33211d;
+    text-decoration: none;
+    font-size: 80%;
+    transform: translate(0, -520%); /* Para acercarlo al texto anterior. CÓMO HAGO PARA NO TENER QUE USAR ESTO Y ORGANIZAR LOS PARRAFOS PARA QUE QUEDEN IGUAL?*/
+}
+
+
+::placeholder {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #33211d;
+}
+
+input[type=text], input[type=tel], input[type=number], input[type=email], input[type=datetime-local], textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #33211d;
+    background-color: transparent;
+}
+  
+input[type=submit] {
+    width: 100%;
+    color: #33211d;
+    background-color: #DA9F5B;
+    font-size: 100%;
+    padding: 1%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Contacto */
+#Contacto {
+    background-image: url("images/granos_cafe.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    color: #FFFFFF;
+}
+
+#Contacto h3 {
+    justify-content: center;
+    align-items: center;
+}
+
+.puntos_contacto {
+    width: 50%;
+}
+
+.iconos_contacto .icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos_contacto .icono a{
+    width: 4%;
+}
+
+.iconos_contacto .icono img{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.iconos_contacto .icono p{
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
+    color: #FFFFFF;
+}
+
+.horarios {
+    width: 50%;
+    align-items:baseline; 
+}
+
+.detalle_horarios {
+    justify-content: center;
+    align-items: center; 
+}

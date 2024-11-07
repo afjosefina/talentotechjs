@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Proyecto</title>
+    <link rel="icon" href="images/icon_cafeteria.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav> <!-- Usamos el header como nav bar -->
+            <div class="section_nav">
+                <div class="nav_title" style="color:white">
+                    <a href="index.html" class="marca">
+                        <h1>PROYECTO</h1>
+                    </a>
+                </div>
+                <div class="nav_bar">
+                    <a href="#Menu">Menu</a>
+                    <a href="#Reservas">Reservas</a>
+                    <a href="#Contacto">Contacto</a>
+                </div>
+            </div>
+
+            <div class="texto_nav">
+                <p class="primera_linea">Sirviendo el mejor</p>
+                <p class="segunda_linea">CAFÉ</p>
+                <p class="tercera_linea">* SINCE 1950 *</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Menu">
+            <p>USAR GRID PARA LA SECCIÓN MENÚ</p>
+        </section>
+
+        <section id="Reservas">
+            <div class="texto_reservas">
+                <p class="titulo_reservas">Reservá tu mesa</p>
+                <p class="subtitulo_reservas">20% OFF</p>
+                <p class="detalle_reservas">en reservas online</p>
+                <p class="comentario_reservas">Por favor aguardar la confirmación que le llegará luego de cargar la solicitud de reserva vía whatsapp o email.</p>
+                <p class="comentario_reservas">En caso de tener una restricción alimenticia, por favor aclararlo en el espacio de comentario adicional.</p>
+            </div>
+            <div class="form">
+                <form action="https://formspree.io/f/xeoqqaol" method="POST">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br><br>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required><br><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                    <input type="datetime-local" id="fecha" name="fecha" placeholder="Fecha" required><br><br>
+                    <input type="number" id="personas" name="personas" placeholder="Personas" required><br><br>
+                    <textarea name="comentario" rows="2" cols="100" placeholder="Comentario adicional"></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="Contacto">
+            <div class="puntos_contacto">
+                <h3>PUNTOS DE CONTACTO</h3>
+                <div class="iconos_contacto">
+                    <div class="icono"><a title="Instagram" href="https://www.instagram.com/ninina.arg/"><img src="images/logotipo-de-instagram.png" alt="Instagram"/></a><p>Cafetería Proyecto</p></div>
+                    <div class="icono"><a title="Ubicación" href="https://maps.app.goo.gl/sFcdpUSNJAQ78TWh9"><img src="images/pasador-de-ubicacion.png" alt="Ubicación"/></a><p>Gorriti 4738</p></div>
+                    <div class="icono"><a title="Telefono" href=""><img src="images/llamar.png" alt="Ubicación"/></a><p>+549 1234 567890</p></div>
+                </div>    
+            </div>
+
+            <div class="horarios">
+                <h3>HORARIOS DE APERTURA</h3>
+                <div class="detalle_horarios"> 
+                    <p>Lunes - Viernes <br> 8:00 AM - 8:00 PM</p>
+                    <p>Sábado - Domingo <br> 2:00 PM - 0:00 AM</p>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+</body>
+
+</html>
