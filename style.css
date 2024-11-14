@@ -9,6 +9,7 @@ body {
     margin: 0;
     line-height: 1.6;
     text-align: center;
+    width: 100%;
 }
 
 
@@ -18,10 +19,17 @@ header {
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
+    object-fit: cover; /*Para ocupar el 100% de la altura de la ventana del navegador*/
     background-attachment: fixed; /*Para que quede fijo el background hasta que se desplaza a la siguiente sección*/
     box-shadow: 5% #222;
     width: 100%;
-    height: 1000px; /*Ver cómo hacer para que la altura sea adaptable según la pantalla pero que ocupe toda la altura*/
+    height: 100vh;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    height: 100%; /*Ver cómo hacer para que la altura sea adaptable según la pantalla pero que ocupe toda la altura*/   
 }
 
 .section_nav {
@@ -87,27 +95,79 @@ header {
     transform: translate(0, -100%); /* Para acercarlo al texto anterior */
 }
 
+
 /* Menú */
 #Menu {
-    font-size: 500%;
-}
-
-
-/* Form */
-#Reservas {
     background-color: #fffbf2;
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
-    padding: 10%;
     margin-top: 1%;
     margin-bottom: 1%;
+}
+
+.titulo_menu {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #DA9F5B;
+    text-decoration: none;
+    font-size: 500%;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.nombres_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #33211d;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+
+.imagenes_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.texto_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Roboto', sans-serif;
+    color: #33211d;
+    text-decoration: none;
+    font-size: 100%;
+    margin-bottom: 10%;
+}
+
+
+/* Reservas */
+
+@media (max-widht: 1000px) {
+    .Reservas {
+        background-color: pink;
+    }
+}
+
+
+
+.Reservas {
+    background-image: url("images/granos_cafe.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 10% 5% 10% 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: flex;
 }
 
 .texto_reservas {
-    width: 60%;
-    padding-right: 5%;
+    width:80%;
+    display: flex;
+    flex-direction: column;
 }
 
 .texto_reservas .titulo_reservas {
@@ -117,42 +177,46 @@ header {
     text-decoration: none;
     font-size: 250%;
     font-weight: bold;
+    margin: 0;
 }
 
 .texto_reservas .subtitulo_reservas {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    color: #33211d;
+    color: #ffffff;
     text-decoration: none;
     font-size: 500%;
     font-weight: bold;
-    transform: translate(0, -80%); /* Para acercarlo al texto anterior. CÓMO HAGO PARA NO TENER QUE USAR ESTO Y ORGANIZAR LOS PARRAFOS PARA QUE QUEDEN IGUAL?*/
+    margin: 0;
 }
 
 .texto_reservas .detalle_reservas {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: #33211d;
+    color: #ffffff;
     text-decoration: none;
     font-size: 200%;
     font-weight: bold;
-    transform: translate(0, -400%); /* Para acercarlo al texto anterior. CÓMO HAGO PARA NO TENER QUE USAR ESTO Y ORGANIZAR LOS PARRAFOS PARA QUE QUEDEN IGUAL? */
+    margin: 0;
 }
 
 .texto_reservas .comentario_reservas {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: #33211d;
+    color: #ffffff;
     text-decoration: none;
     font-size: 80%;
-    transform: translate(0, -520%); /* Para acercarlo al texto anterior. CÓMO HAGO PARA NO TENER QUE USAR ESTO Y ORGANIZAR LOS PARRAFOS PARA QUE QUEDEN IGUAL?*/
+    margin-top: 1%;
 }
 
+.form {
+    padding-left: 5%;
+}
 
 ::placeholder {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: #33211d;
+    color: #ffffff;
 }
 
 input[type=text], input[type=tel], input[type=number], input[type=email], input[type=datetime-local], textarea {
@@ -165,38 +229,41 @@ input[type=text], input[type=tel], input[type=number], input[type=email], input[
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    color: #33211d;
+    color: #ffffff;
     background-color: transparent;
 }
   
 input[type=submit] {
     width: 100%;
-    color: #33211d;
+    color: #ffffff;
     background-color: #DA9F5B;
     font-size: 100%;
-    padding: 1%;
+    padding: 2%;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
+input[type="datetime-local"]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    margin-right: 2px;
+    filter: invert(0.9);
+    color: #ffffff;
+}
+
 
 /* Contacto */
 #Contacto {
-    background-image: url("images/granos_cafe.png");
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
     width: 100%;
     padding-top: 2%;
     padding-bottom: 2%;
     display: flex;
-    color: #FFFFFF;
 }
 
 #Contacto h3 {
     justify-content: center;
     align-items: center;
+    color: #DA9F5B;
 }
 
 .puntos_contacto {
@@ -223,7 +290,7 @@ input[type=submit] {
     justify-content: center;
     align-items: center;
     padding-left: 2%;
-    color: #FFFFFF;
+    color: #33211d;
 }
 
 .horarios {
