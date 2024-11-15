@@ -152,7 +152,7 @@ nav {
     background-size: cover;
     padding: 10% 5% 10% 5%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     display: flex;
 }
 
@@ -245,10 +245,12 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator{
 
 
 /* Contacto */
+
 #Contacto {
     width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
     display: flex;
 }
 
