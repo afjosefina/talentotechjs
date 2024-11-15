@@ -145,15 +145,7 @@ nav {
 
 /* Reservas */
 
-@media (max-widht: 1000px) {
-    .Reservas {
-        background-color: pink;
-    }
-}
-
-
-
-.Reservas {
+#Reservas {
     background-image: url("images/granos_cafe.png");
     background-position: center;
     background-repeat: no-repeat; 
